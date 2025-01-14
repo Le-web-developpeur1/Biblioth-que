@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Bibliothéque de livres</title>
+    </head>
+    <body>
+        <header>
+            <h1>Gestion de Bibliothèque</h1>
+        </header>
+        <h2>Ajouter un livre</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="title">Titre :</label>
+                <input type="text" id="titre" name="title" placeholder="Titre du livre" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Auteur :</label>
+                <input type="text" id="auteur" name="author" placeholder="Auteur du livre" required>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre :</label>
+                <input type="text" id="genre" placeholder="Genre du livre" name="genre" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Année :</label>
+                <input type="number" id="an" name="year" placeholder="Anée de publication" required>
+            </div>
+            <button type="submit" id="submitBtn">Ajouter</button>
+        </form>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Genre</th>
+                    <th>Année</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                    
+            </tbody>
+        </table>    
+        <script src="script.js"></script>    
+    </body>
+</html>
